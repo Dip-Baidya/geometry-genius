@@ -117,10 +117,12 @@
                         <h2 class="card-title">Pentagon</h2>
                         <p class="text-3xl">Area = 0.5 X p X b</p>
                         <div class="flex gap-5">
-                            <input class="w-24 text-2xl p-2 rounded-sm" type="text" name="" id="pentagon-perimeter" placeholder="P">
+                            <input class="w-24 text-2xl p-2 rounded-sm" type="text" name="" id="pentagon-perimeter"
+                                placeholder="P">
                             <span class="ml-2 mr-4">cm</span>
-                            
-                            <input class="w-24 text-2xl p-2 rounded-sm" type="text" name="" id="pentagon-apothem" placeholder="A">
+
+                            <input class="w-24 text-2xl p-2 rounded-sm" type="text" name="" id="pentagon-apothem"
+                                placeholder="A">
                             <span class="ml-2 mr-4">cm</span>
                         </div>
                         <div>
@@ -138,9 +140,21 @@
                     </figure>
                     <div class="card-body">
                         <h2 class="card-title">Ellipse</h2>
-                        <p>If a dog chews shoes whose shoes does he choose?</p>
+                        <p class="text-3xl">Area = π X a X b</p>
+                        <div class="flex gap-5">
+                            <input class="w-24 text-2xl p-2 rounded-sm" type="text" name="" id="ellipse-major-radius"
+                                placeholder="major">
+                            <span class="ml-2 mr-4">cm</span>
+
+                            <input class="w-24 text-2xl p-2 rounded-sm" type="text" name="" id="ellipse-minnor-radius"
+                                placeholder="minor">
+                            <span class="ml-2 mr-4">cm</span>
+                        </div>
+                        <div>
+                            <p class="text-2xl">Area: <span id="ellipse-area">0</span> cm <sup>2</sup></p>
+                        </div>
                         <div class="card-actions justify-end">
-                            <button class="btn btn-primary">Buy Now</button>
+                            <button onclick="calculateEllipseArea()" class="btn btn-primary w-full">Calculate</button>
                         </div>
                     </div>
                 </div>
@@ -156,6 +170,7 @@
     <script src="script/rectangle-area.js"></script>
     <script src="script/parallelogram.js"></script>
     <script src="script/pentagon.js"></script>
+    <script src="script/ellipse-area.js"></script>
 </body>
 
 </html>
